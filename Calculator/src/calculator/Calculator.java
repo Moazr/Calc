@@ -45,8 +45,9 @@ public class Calculator {
         return num1 + num2;
     }
 
-    public static void subtract(double num1, double num2) {
-        // Student Number 2, add your code here
+    public static double subtract(double num1, double num2) {
+        // Meshal
+        return num1 - num2;
     }
 
     public static void multiply(double num1, double num2) {
