@@ -54,7 +54,8 @@ public class Calculator {
         // Student Number 3, add your code here
     }
 
-    public static void divide(double num1, double num2) {
-        // Student Number 4, add your code here 
+    public static double divide(double num1, double num2) {
+        // Bader
+        return num1 / num2;
     }
 }
