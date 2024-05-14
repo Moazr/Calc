@@ -60,12 +60,23 @@ public class CalculatorTest {
      * Test of divide method, of class Calculator.
      */
     @Test
-    public void testDivide() {
+    public void testDivide1() {
         System.out.println("divide");
-        double num1 = 0.0;
-        double num2 = 0.0;
-        Calculator.divide(num1, num2);
-        // TODO review the generated test code and remove the default call to fail.
+        double num1 = 25.0;
+        double num2 = 2.0;
+        double expected = 12.5;
+        double result = Calculator.divide(num1, num2);
+        assertEquals(expected, result, 0.0001);
+    }
+    
+    @Test
+    public void testDivide2() {
+        System.out.println("divide");
+        double num1 = 100000.0;
+        double num2 = 50.0;
+        double expected = 2000.0;
+        double result = Calculator.divide(num1, num2);
+        assertEquals(expected, result, 0.0001);
     }
 
 }
