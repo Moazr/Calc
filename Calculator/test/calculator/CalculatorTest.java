@@ -1,64 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
- */
 package calculator;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author moazr
  */
 public class CalculatorTest {
-    
-    public CalculatorTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of main method, of class Calculator.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Calculator.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 
     /**
      * Test of add method, of class Calculator.
      */
     @Test
-    public void testAdd() {
+    public void testAdd1() {
         System.out.println("add");
-        double num1 = 0.0;
-        double num2 = 0.0;
-        Calculator.add(num1, num2);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        double num1 = 1;
+        double num2 = 2;
+        double expected = 3;
+        assertEquals(expected, Calculator.add(num1, num2));
+    }
+
+    @Test
+    public void testAdd2() {
+        System.out.println("add");
+        double num1 = 6;
+        double num2 = 54;
+        double expected = 60;
+        assertEquals(expected, Calculator.add(num1, num2));
     }
 
     /**
@@ -71,7 +40,6 @@ public class CalculatorTest {
         double num2 = 0.0;
         Calculator.subtract(num1, num2);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -84,7 +52,6 @@ public class CalculatorTest {
         double num2 = 0.0;
         Calculator.multiply(num1, num2);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -97,7 +64,6 @@ public class CalculatorTest {
         double num2 = 0.0;
         Calculator.divide(num1, num2);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
+
 }
