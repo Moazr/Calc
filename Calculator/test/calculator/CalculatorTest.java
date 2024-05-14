@@ -16,22 +16,22 @@ import static org.junit.Assert.*;
  * @author moazr
  */
 public class CalculatorTest {
-    
+
     public CalculatorTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -67,11 +67,11 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         System.out.println("subtract");
-        double num1 = 0.0;
-        double num2 = 0.0;
-        Calculator.subtract(num1, num2);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        double num1 = 5.0;
+        double num2 = 3.0;
+        double expected = 2.0;
+        double result = Calculator.subtract(num1, num2);
+        assertEquals(expected, result, 0.0001);
     }
 
     /**
@@ -99,5 +99,5 @@ public class CalculatorTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }
