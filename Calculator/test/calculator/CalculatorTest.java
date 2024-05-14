@@ -8,7 +8,6 @@ import org.junit.Test;
  * @author moazr
  */
 public class CalculatorTest {
-
     /**
      * Test of add method, of class Calculator.
      */
@@ -36,10 +35,13 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         System.out.println("subtract");
-        double num1 = 0.0;
-        double num2 = 0.0;
-        Calculator.subtract(num1, num2);
+
         // TODO review the generated test code and remove the default call to fail.
+        double num1 = 5.0;
+        double num2 = 3.0;
+        double expected = 2.0;
+        double result = Calculator.subtract(num1, num2);
+        assertEquals(expected, result, 0.0001);
     }
 
     /**
