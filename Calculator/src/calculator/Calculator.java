@@ -45,15 +45,18 @@ public class Calculator {
         return num1 + num2;
     }
 
-    public static void subtract(double num1, double num2) {
-        // Student Number 2, add your code here
+    public static double subtract(double num1, double num2) {
+        // Meshal
+        return num1 - num2;
     }
 
-    public static void multiply(double num1, double num2) {
-        // Student Number 3, add your code here
+   public static double multiply(double num1, double num2) {
+        // Abdulrahman
+        return num1*num2;
     }
 
-    public static void divide(double num1, double num2) {
-        // Student Number 4, add your code here 
+    public static double divide(double num1, double num2) {
+        // Bader
+        return num1 / num2;
     }
 }
