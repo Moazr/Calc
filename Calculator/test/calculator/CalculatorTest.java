@@ -50,10 +50,10 @@ public class CalculatorTest {
     @Test
     public void testMultiply() {
         System.out.println("multiply");
-        double num1 = 0.0;
-        double num2 = 0.0;
-        Calculator.multiply(num1, num2);
-        // TODO review the generated test code and remove the default call to fail.
+        double num1 = 4;
+        double num2 = 3;
+        double expected = 12;
+        assertEquals(expected, Calculator.multiply(num1, num2));
     }
 
     /**
